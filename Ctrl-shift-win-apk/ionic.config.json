@@ -1,0 +1,7 @@
+{
+  "name": "Ctrl-shift-win",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

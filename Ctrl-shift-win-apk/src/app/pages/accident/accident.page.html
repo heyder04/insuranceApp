@@ -1,0 +1,34 @@
+<ion-header class="ion-no-border" >
+  <ion-toolbar class="d-flex ">
+    <ion-buttons slot="start">
+      <!--      <ion-button (click)="goBack()">-->
+      <!--        <img src="assets/icon/arrow-back.svg" alt="Back">-->
+      <!--      </ion-button>-->
+      <ion-back-button style="color:black" defaultHref="/tabs/profile"></ion-back-button>
+    </ion-buttons>
+    <ion-buttons  slot="start">
+      Search expert
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+
+
+<ion-content [fullscreen]="true">
+  <ion-row *ngIf="!loading&&step===1">
+    <ion-input class="regnum" placeholder="Registration number"></ion-input>
+    <ion-button class="search" (click)="search1()">Start to search</ion-button>
+  </ion-row>
+  <ion-row *ngIf="loading" class="loading"><ion-col>Searching for expert...</ion-col></ion-row>
+  <ion-row *ngIf="!loading&&step===2" class="expert-info">
+    <ion-col>
+      <div><ion-icon name="person-circle"></ion-icon></div>
+      <div class="details">
+        <ion-text style="font-size: 16px">Kenan Orucov</ion-text>
+        <ion-text>+994703402011</ion-text>
+      </div>
+    </ion-col>
+  </ion-row>
+  <div class="map" #map  ></div>
+</ion-content>

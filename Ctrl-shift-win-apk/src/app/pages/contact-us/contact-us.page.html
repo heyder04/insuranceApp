@@ -1,0 +1,37 @@
+<ion-header class="ion-no-border" >
+  <ion-toolbar class="d-flex ">
+    <ion-buttons slot="start">
+      <!--      <ion-button (click)="goBack()">-->
+      <!--        <img src="assets/icon/arrow-back.svg" alt="Back">-->
+      <!--      </ion-button>-->
+      <ion-back-button style="color:black" defaultHref="/tabs/profile"></ion-back-button>
+    </ion-buttons>
+    <ion-buttons  slot="start">
+     Contact us
+    </ion-buttons>
+
+    <!--    <ion-buttons slot="end">-->
+    <!--      <ion-button   class="no-ripple " mode="ios">-->
+    <!--        <div  [ngClass]="{'live-active':live}" (click)="showLives()" class=" btn-live d-flex  align-items-center">-->
+    <!--          <p class="m-0 p-live">Canlı</p>-->
+    <!--          <div class="small-circle"></div>-->
+    <!--        </div>-->
+    <!--      </ion-button>-->
+    <!--    </ion-buttons>-->
+
+
+
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content [fullscreen]="true">
+  <ion-col (click)="suggest()" class="sections">
+    <ion-img src="assets/icon/suggestion.png"></ion-img>
+    <ion-text>Suggestion and complaint</ion-text>
+  </ion-col>
+  <ion-col (click)="searchExpert()" class="sections">
+    <ion-img src="assets/icon/expert.png"></ion-img>
+    <ion-text>Search for accident expert</ion-text>
+  </ion-col>
+</ion-content>
