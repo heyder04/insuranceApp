@@ -1,0 +1,62 @@
+<ion-header class="ion-no-border" >
+  <ion-toolbar class="d-flex ">
+    <ion-buttons  slot="start">
+      Welcome Heyder
+    </ion-buttons>
+
+<!--    <ion-buttons slot="end">-->
+<!--      <ion-button   class="no-ripple " mode="ios">-->
+<!--        <div  [ngClass]="{'live-active':live}" (click)="showLives()" class=" btn-live d-flex  align-items-center">-->
+<!--          <p class="m-0 p-live">Canlı</p>-->
+<!--          <div class="small-circle"></div>-->
+<!--        </div>-->
+<!--      </ion-button>-->
+<!--    </ion-buttons>-->
+
+
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+ <div class="card-container">
+   <ion-card class="cards">
+     <ion-card-content>
+       <ion-icon name="document-outline"></ion-icon>
+       <ion-text>Invoices</ion-text>
+     </ion-card-content>
+   </ion-card>
+
+   <ion-card class="cards">
+     <ion-card-content>
+       <ion-img src="assets/icon/insurance.png"></ion-img>
+       <ion-text>Insurances</ion-text>
+     </ion-card-content>
+   </ion-card>
+ </div>
+  <div class="claims">
+    <ion-text class="mb-16" style="display: block">Claims</ion-text>
+
+      <ion-col>
+        <div class="img">
+          <ion-icon name="car-outline"></ion-icon>
+          </div>
+      <div class="info">
+        <ion-text class="title">Toyota Prius</ion-text>
+    <ion-text class="subtitle">90-TT-004</ion-text>
+      </div>
+
+      </ion-col>
+      <ion-col>
+        <div class="img">
+          <ion-icon name="car-outline"></ion-icon>
+        </div>
+        <div class="info">
+          <ion-text class="title">Lexus</ion-text>
+          <ion-text class="subtitle">99-GF-946</ion-text>
+        </div>
+
+      </ion-col>
+
+  </div>
+</ion-content>
