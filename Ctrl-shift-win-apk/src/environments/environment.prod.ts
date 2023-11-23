@@ -1,7 +1,7 @@
 export const environment = {
   production: true,
   apiUrl:'http://10.33.141.38:8080',
-  TRANSLATION :"AIzaSyAfhuxSKGUFdVmL_20Tnh5GiKaPd3fzcW4",
-  OPENAI_API_KEY :"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",
-  GOOGLE_MAP:"AIzaSyBX7oxxfkTgZWPrGSJfIuHcN1bc19UxFSo"
+  TRANSLATION :"AIzaSyA3AIUBhRdslsA0263BQzFdC8HNaHPOd90",
+  OPENAI_API_KEY :"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",
+  GOOGLE_MAP:"AIzaSyA3AIUBhRdslsA0263BQzFdC8HNaHPOd90"
 };
